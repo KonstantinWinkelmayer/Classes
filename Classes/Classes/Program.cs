@@ -8,27 +8,30 @@ namespace Classes
         {
             Console.WriteLine("Classes!");
 
-            //class ----- instantiate -------->  objects
 
-
-            //instantiate object
-            //string name = "Max Mustermann"
+            // class = Bauanleitung/Typbeschreibung ---------------- instantiate ------>    objects
+            // object is 
+            // instantiate objects
+            // string name = "Max Mustermann";
+            // initiate custom object
             string name = new string("Max Mustermann");
 
+            // initiate custom object
+            Person max = new Person(name, 19);
 
-            //create object
-            Person person = new Person();
-            person.Name = name;
-            
+            //person._Name = name;
+            //person._Age = 19;
 
-            //create object
-            Person person2 = new Person();
-            person2.Name = "Peter";
+            // initiate custom object 
+            Person peter = new Person("Peter");
+            //person2._Name = "Peter Lustig";
 
-            //use objects
-            person.Print();
-            person2.Print();
+
+            // use object and call methodes
+            max.Print();
+            peter.Print();
            
+
         }
     }
 }
